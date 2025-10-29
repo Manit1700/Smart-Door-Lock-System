@@ -57,4 +57,3 @@ Smart-Door-Lock-System/
 │   └── build.gradle                         ← Android project build file
 ├── README.md                                ← Project overview & instructions
 └── LICENSE                                  ← MIT License (or as chosen)
-
