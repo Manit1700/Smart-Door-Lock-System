@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SmartDoorLock" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_dark_blue</item>
+        <item name="colorAccent">@color/accent_silver</item>
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <item name="materialButtonStyle">@style/CustomButtonStyle</item>
+        <item name="android:statusBarColor">@color/primary_blue</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="RoundedDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="dialogCornerRadius">16dp</item>
+        <item name="android:background">@drawable/dialog_background</item>
+    </style>
+</resources>

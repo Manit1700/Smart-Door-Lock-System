@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <Button
+        android:id="@+id/btnClearLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Logs"
+        android:layout_margin="16dp"/>
+
+    <ListView
+        android:id="@+id/logListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/accent_silver"
+        android:dividerHeight="1dp"
+        android:padding="8dp"/>
+</LinearLayout>
