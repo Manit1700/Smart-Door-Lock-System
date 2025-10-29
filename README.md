@@ -35,14 +35,26 @@ The system uses a **solenoid lock** controlled by a relay, and the commands `U` 
 ## 📂 Project Structure
 
 ```plaintext
-📁 Smart-Door-Lock
+Smart-Door-Lock-System/
 ├── Arduino/
-│   └── Smart_Door_Lock.ino
+│   └── Smart_Door_Lock.ino               ← Arduino UNO code for solenoid + stepper + HC-05
 ├── NodeMCU/
-│   └── nodemcu_notification_code.ino
+│   └── nodemcu_notification_code.ino     ← ESP8266 code for Telegram notifications
 ├── Android-App/
-│   ├── MainActivity.java
-│   ├── LoginActivity.java
-│   ├── LogManager.java
-│   └── LogEntry.java
-└── README.md
+│   ├── app/
+│   │   ├── src/
+│   │   │   └── main/
+│   │   │       ├── java/
+│   │   │       │   └── com/yourcompany/yourapp/
+│   │   │       │       ├── MainActivity.java
+│   │   │       │       ├── LoginActivity.java
+│   │   │       │       ├── LogManager.java
+│   │   │       │       └── LogEntry.java
+│   │   │       └── res/
+│   │   │           ├── layout/
+│   │   │           └── values/
+│   │   └── AndroidManifest.xml
+│   └── build.gradle                         ← Android project build file
+├── README.md                                ← Project overview & instructions
+└── LICENSE                                  ← MIT License (or as chosen)
+
